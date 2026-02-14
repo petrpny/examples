@@ -1,0 +1,66 @@
+{
+  "all": {
+    "hosts": {
+      "switch_172_31_200_1": {
+        "ansible_host": "172.31.200.1",
+        "ansible_user": "root",
+        "ansible_password": "PhilipsR00t!",
+        "ansible_network_os": "cisco.ios.ios",
+        "ansible_connection": "ansible.netcommon.network_cli",
+        "ansible_become": "yes",
+        "ansible_become_method": "enable",
+        "ansible_become_password": "m3150e",
+        "ansible_python_interpreter": "/usr/bin/python3",
+        "ansible_host_key_auto_add": "yes",
+        "ansible_ssh_common_args": "-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc,3des-cbc -o MACs=hmac-md5,hmac-sha2-512"
+      },
+      "switch_172_31_200_2": {
+        "ansible_host": "172.31.200.2",
+        "ansible_user": "root",
+        "ansible_password": "PhilipsR00t!",
+        "ansible_network_os": "cisco.ios.ios",
+        "ansible_connection": "ansible.netcommon.network_cli",
+        "ansible_become": "yes",
+        "ansible_become_method": "enable",
+        "ansible_become_password": "m3150e",
+        "ansible_python_interpreter": "/usr/bin/python3",
+        "ansible_host_key_auto_add": "yes",
+        "ansible_ssh_common_args": "-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc,3des-cbc -o MACs=hmac-md5,hmac-sha2-512"
+      },
+      "switch_172_31_200_3": {
+        "ansible_host": "172.31.200.3",
+        "ansible_user": "root",
+        "ansible_password": "PhilipsR00t!",
+        "ansible_network_os": "cisco.ios.ios",
+        "ansible_connection": "ansible.netcommon.network_cli",
+        "ansible_become": "yes",
+        "ansible_become_method": "enable",
+        "ansible_become_password": "m3150e",
+        "ansible_python_interpreter": "/usr/bin/python3",
+        "ansible_host_key_auto_add": "yes",
+        "ansible_ssh_common_args": "-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc,3des-cbc -o MACs=hmac-md5,hmac-sha2-512"
+      }
+    },
+    "vars": {
+      "ansible_user": "root",
+      "ansible_password": "PhilipsR00t!",
+      "ansible_connection": "ansible.netcommon.network_cli",
+      "ansible_network_os": "cisco.ios.ios",
+      "ansible_become": "yes",
+      "ansible_become_method": "enable",
+      "ansible_become_password": "m3150e",
+      "ansible_python_interpreter": "/usr/bin/python3",
+      "ansible_host_key_auto_add": "yes",
+      "ansible_ssh_common_args": "-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc,3des-cbc -o MACs=hmac-md5,hmac-sha2-512"
+    },
+    "children": {
+      "switches": {
+        "hosts": {
+          "switch_172_31_200_1": null,
+          "switch_172_31_200_2": null,
+          "switch_172_31_200_3": null
+        }
+      }
+    }
+  }
+}

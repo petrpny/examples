@@ -1,0 +1,9 @@
+---
+inventory:
+  plugin: AnsibleInventory
+  options:
+    hostsfile: inventory  # Points to your Ansible INI/YAML file (relative path)
+runner:
+  plugin: threaded
+  options:
+    num_workers: 10  # Optional: Enables parallel tasks for later use
